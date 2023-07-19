@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.5
   flutter: 
     sdk: flutter
+  google_fonts: ^5.1.0
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -18,4 +19,24 @@ dev_dependencies:
 
 flutter: 
   uses-material-design: true
-
+  assets:
+    - assets/
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: fonts/static/Sora-Thin.ttf
+          weight: 100
+        - asset: fonts/static/Sora-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/static/Sora-Light.ttf
+          weight: 300
+        - asset: fonts/static/Sora-Regular.ttf
+          weight: 400
+        - asset: fonts/static/Sora-Medium.ttf
+          weight: 500
+        - asset: fonts/static/Sora-SemiBold.ttf
+          weight: 600
+        - asset: fonts/static/Sora-Bold.ttf
+          weight: 700
+        - asset: fonts/static/Sora-ExtraBold.ttf
+          weight: 800

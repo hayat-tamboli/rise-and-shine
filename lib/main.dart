@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
-import 'app/routes/app_pages.dart';
+import 'package:rise_and_shine/routes/app_pages.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     GetMaterialApp(
-      title: "Application",
+      title: "Rise and Shine",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: const Color(0xffF2987C),
+        scaffoldBackgroundColor: Colors.white,
+        fontFamily: "Sora",
+      ),
     ),
   );
 }
